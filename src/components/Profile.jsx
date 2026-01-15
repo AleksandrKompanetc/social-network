@@ -4,6 +4,9 @@ const Profile = () => {
   return (
     <div className='content'>
       <div>
+        <img src="./beach.jpg" width={700} alt="" />
+      </div>
+      <div>
         IMG
       </div>
       <div>
@@ -11,6 +14,17 @@ const Profile = () => {
       </div>
       <div>
         My posts
+        <div>
+          New posts
+        </div>
+        <div>
+          <div>
+            Post 1
+          </div>
+          <div>
+            Post 2
+          </div>
+        </div>
       </div>
     </div>
 

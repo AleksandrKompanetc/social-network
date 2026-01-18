@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import './Profile.css'
 
 const Profile = () => {
   return (
@@ -17,11 +18,11 @@ const Profile = () => {
         <div>
           New posts
         </div>
-        <div>
-          <div>
+        <div className='posts'>
+          <div className='post'>
             Post 1
           </div>
-          <div>
+          <div className='post'>
             Post 2
           </div>
         </div>
@@ -31,4 +32,4 @@ const Profile = () => {
   )
 }
 
-export default Profile;
+export default Profile

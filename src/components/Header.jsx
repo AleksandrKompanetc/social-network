@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return <header className='header'>
-    <img src="./logotip.png" alt="Logo" />
+    <img src="./logotip.svg" alt="Logo" />
     Header Component
   </header>
 }

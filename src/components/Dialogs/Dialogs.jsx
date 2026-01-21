@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Dialogs.module.css';
 
-const Dialods = () => {
+const Dialods = (props) => {
   return (
-    <div>Dialogs</div>
+    <div className={styles.content}>Dialogs</div>
   )
 }
 

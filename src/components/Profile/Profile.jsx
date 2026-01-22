@@ -4,7 +4,7 @@ import MyPosts from './MyPosts/MyPosts.jsx'
 
 const Profile = () => {
   return (
-    <div className={styles.content}>
+    <div>
       <div>
         <img src="./beach.jpg" width={700} alt="" />
       </div>

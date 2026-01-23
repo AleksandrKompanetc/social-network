@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './Dialogs.module.css';
+import React from "react";
+import styles from "./Dialogs.module.css";
 
-const Dialods = (props) => {
+const Dialogs = () => {
   return (
-    <div>Dialogs</div>
-  )
-}
+    <div>Dialogs content</div>
+  );
+};
 
 export default Dialogs;

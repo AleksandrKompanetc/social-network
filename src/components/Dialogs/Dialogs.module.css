@@ -1,39 +1,27 @@
 .dialogs {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  padding: 20px;
 }
 
 .dialogsItems {
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid #ccc;
-  padding: 10px;
-  width: 200px;
+}
+
+.dialog .active {
+  color: gold;
 }
 
 .dialog {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-}
-
-.dialog:hover {
-  background-color: #f0f0f0;
 }
 
 .messages {
-  flex-grow: 1;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
+  
 }
 
 .message {
-  padding: 8px 12px;
-  border-bottom: 1px solid #eee;
+  
 }
 
 .message:last-child {
-  border-bottom: none;
+  
 }

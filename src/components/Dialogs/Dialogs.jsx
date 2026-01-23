@@ -5,7 +5,7 @@ const Dialogs = () => {
   return (
     <div className={styles.dialogs}>
       <div className={styles.dialogsItems}>
-        <div className={styles.dialog}>
+        <div className={styles.dialog + ' ' + styles.active}>
           Dima
         </div>
         <div className={styles.dialog}>

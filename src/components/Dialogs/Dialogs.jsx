@@ -3,28 +3,28 @@ import styles from "./Dialogs.module.css";
 
 const Dialogs = () => {
   return (
-    <div className="dialogs">
-      <div className="dialogs-items">
-        <div className="dialog">
+    <div className={styles.dialogs}>
+      <div className={styles.dialogsItems}>
+        <div className={styles.dialog}>
           Dima
         </div>
-        <div className="dialog">
+        <div className={styles.dialog}>
           Andrey
         </div>
-        <div className="dialog">
+        <div className={styles.dialog}>
           Sveta
         </div>
-        <div className="dialog">
+        <div className={styles.dialog}>
           Sasha
         </div>
-        <div className="dialog">
+        <div className={styles.dialog}>
           Viktor
         </div>
       </div>
-      <div className="messages">
-        <div className="message">Hi!</div>
-        <div className="message">How are you?</div>
-        <div className="message">Let's meet up!</div>
+      <div className={styles.messages}>
+        <div className={styles.message}>Hi!</div>
+        <div className={styles.message}>How are you?</div>
+        <div className={styles.message}>Let's meet up!</div>
       </div>
     </div>
   );

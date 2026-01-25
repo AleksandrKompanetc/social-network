@@ -1,24 +1,33 @@
 import React from "react";
+import { NavLink as Navlink } from "react-router-dom";
 import styles from "./Dialogs.module.css";
+
+const DialogItem = ({ name, isActive }) => {
+  return (
+    <div className={`${styles.dialog} ${isActive ? styles.active : ""}`}>
+      <Navlink>{name}</Navlink>
+    </div>
+  );
+};
 
 const Dialogs = () => {
   return (
     <div className={styles.dialogs}>
       <div className={styles.dialogsItems}>
         <div className={styles.dialog + ' ' + styles.active}>
-          Dima
+          <Navlink>Dima</Navlink>
         </div>
         <div className={styles.dialog}>
-          Andrey
+          <Navlink>Andrey</Navlink>
         </div>
         <div className={styles.dialog}>
-          Sveta
+          <Navlink>Sveta</Navlink>      
         </div>
         <div className={styles.dialog}>
-          Sasha
+          <Navlink>Sasha</Navlink>
         </div>
         <div className={styles.dialog}>
-          Viktor
+          <Navlink>Viktor</Navlink> 
         </div>
       </div>
       <div className={styles.messages}>

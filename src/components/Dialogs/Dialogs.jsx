@@ -17,17 +17,10 @@ const Dialogs = () => {
         <div className={styles.dialog + ' ' + styles.active}>
           <Navlink>Dima</Navlink>
         </div>
-        <div className={styles.dialog}>
-          <Navlink>Andrey</Navlink>
-        </div>
-        <div className={styles.dialog}>
-          <Navlink>Sveta</Navlink>      
-        </div>
-        <div className={styles.dialog}>
-          <Navlink>Sasha</Navlink>
-        </div>
-        <div className={styles.dialog}>
-          <Navlink>Viktor</Navlink> 
+        <DialogItem name="Andrey" />
+        <DialogItem name="Sveta" />
+        <DialogItem name="Sasha" />
+        <DialogItem name="Viktor" />
         </div>
       </div>
       <div className={styles.messages}>

@@ -1,19 +1,12 @@
 import React from 'react'
 import styles from './Profile.module.css'
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx'
 import MyPosts from './MyPosts/MyPosts.jsx'
 
 const Profile = () => {
   return (
     <div>
-      <div>
-        <img src="./beach.jpg" width={700} alt="" />
-      </div>
-      <div>
-        IMG
-      </div>
-      <div>
-        AVA + Description
-      </div>
+      <ProfileInfo />
       <MyPosts />
     </div>
 

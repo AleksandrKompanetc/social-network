@@ -35,7 +35,7 @@ const Dialogs = () => {
   ]
 
   let dialogsElements = dialogs.map( dialog => <DialogItem name={dialog.name} id={dialog.id} />)
-  let messagesElements = messages.map( messages => <Message message={message.message} />)
+  let messagesElements = messages.map( message => <Message message={message.message} />)
 
   return (
     <div className={styles.dialogs}>

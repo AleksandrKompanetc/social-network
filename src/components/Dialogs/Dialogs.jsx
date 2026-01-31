@@ -34,8 +34,6 @@ const Dialogs = () => {
     { id: 3, message: "Let's meet up!" }
   ]
 
-  ]
-
   return (
     <div className={styles.dialogs}>
       <div className={styles.dialogsItems}>

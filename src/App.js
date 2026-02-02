@@ -14,8 +14,11 @@ function App() {
         <Navbar />
         <div className='app-wrapper-content'>
           <Routes>
-            <Route path='/dialogs' element={<Dialogs />} />
-            <Route path='/profile' element={<Profile />} />
+            {/* <Route path='/dialogs' element={<Dialogs />} />
+            <Route path='/profile' element={<Profile />} /> */}
+
+            <Route path='/dialogs' render={() => <Dialogs />} />
+            <Route path='/profile' render={() => <Profile />} />
           </Routes>
         </div>
       </div>

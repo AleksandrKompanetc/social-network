@@ -24,16 +24,11 @@ let store = {
       ]
     },
     sidebar: {}
-  }
-}
-
-let rerenderEntireTree = () => {
-  console.log('State');
-}
-
-window.state = state;
-
-export const addPost = () => {
+  },
+  rerenderEntireTree: () => {
+    console.log('State');
+  },
+  addPost() {
   let newPost = {
     id: 5,
     message: state.profilePage.newPostText,
@@ -43,12 +38,15 @@ export const addPost = () => {
   state.profilePage.posts.push(newPost);
   state.profilePage.newPostText = '';
   rerenderEntireTree(state);
-}
-
-export const updateNewPostText = (newText) => {
+},
+updateNewPostText(newText) {
   state.profilePage.newPostText = newText;
   rerenderEntireTree(state);
+},
+
 }
+
+window.state = state;
 
 export const subscribe = (observer) => {
   rerenderEntireTree = observer;

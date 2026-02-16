@@ -34,21 +34,21 @@ let store = {
   subscribe(observer) {
     this._callSubscriber = observer;
   },
-  addPost() {
-    let newPost = {
-      id: 5,
-      message: this._state.profilePage.newPostText,
-      likesCount: 0
-    }
+  // addPost() {
+  //   let newPost = {
+  //     id: 5,
+  //     message: this._state.profilePage.newPostText,
+  //     likesCount: 0
+  //   }
 
-    this._state.profilePage.posts.push(newPost);
-    this._state.profilePage.newPostText = '';
-    this._callSubscriber(this._state);
-  },
-  updateNewPostText(newText) {
-    this._state.profilePage.newPostText = newText;
-    this._callSubscriber(this._state);
-  },
+  //   this._state.profilePage.posts.push(newPost);
+  //   this._state.profilePage.newPostText = '';
+  //   this._callSubscriber(this._state);
+  // },
+  // updateNewPostText(newText) {
+  //   this._state.profilePage.newPostText = newText;
+  //   this._callSubscriber(this._state);
+  // },
   dispatch() {
     if (action.type === 'ADD-POST') {
       let newPost = {
@@ -64,6 +64,19 @@ let store = {
       this._state.profilePage.newPostText = action.newText;
       this._callSubscriber(this._state);
     }
+  }
+}
+
+let addPostActionCreator = () => {
+  return {
+    type: 'ADD-POST'
+  }
+}
+
+let updateNewPostTextActionCreator = (text) => {
+  return {
+    type: 'UPDATE-NEW-POST-TEXT',
+    newText: text
   }
 }
 

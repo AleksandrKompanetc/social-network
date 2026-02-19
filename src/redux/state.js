@@ -13,18 +13,19 @@ let store = {
       newPostText: 'it-kamasutra'
     },
     dialogsPage: {
-      messages: [
-        { id: 1, message: "Hi!" },
-        { id: 2, message: "How are you?" },
-        { id: 3, message: "Let's meet up!" }
-      ],
       dialogs: [
         { id: 1, name: "Dima" },
         { id: 2, name: "Andrey" },
         { id: 3, name: "Sveta" },
         { id: 4, name: "Sasha" },
         { id: 5, name: "Viktor" }
-      ]
+      ],
+      messages: [
+        { id: 1, message: "Hi!" },
+        { id: 2, message: "How are you?" },
+        { id: 3, message: "Let's meet up!" }
+      ],
+      newMessageBody: ''
     },
     sidebar: {}
   },
@@ -57,13 +58,13 @@ let store = {
 
 export const addPostActionCreator = () => {
   return {
-    type: 'ADD-POST'
+    type: ADD_POST
   }
 }
 
 export const updateNewPostTextActionCreator = (text) => {
   return {
-    type: 'UPDATE-NEW-POST-TEXT',
+    type: UPDATE_NEW_POST_TEXT,
     newText: text
   }
 }

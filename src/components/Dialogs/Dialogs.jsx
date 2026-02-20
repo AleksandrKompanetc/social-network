@@ -11,6 +11,8 @@ const Dialogs = (props) => {
   let dialogsElements = props.state.dialogs.map( dialog => <DialogItem name={dialog.name} id={dialog.id} />)
   let messagesElements = props.state.messages.map( message => <Message message={message.message} />)
 
+  let newMessageBody = props.state.newMessageBody;
+
   let onSendMessageClick = () => {
     let text = newMessage.current.value;
     props.dispatch(updateNewMessageBodyActionCreator(text));
@@ -25,7 +27,7 @@ const Dialogs = (props) => {
 
       <div className={styles.messages}>
         <div>
-          <textarea ref={newMessage}></textarea>
+          <textarea value={newMessageBody} ref={newMessage}></textarea>
           <button onClick={onSendMessageClick}>Send</button>
         </div>
         <div>{messagesElements}</div>

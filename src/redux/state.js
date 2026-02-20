@@ -12,7 +12,7 @@ let store = {
         { id: 3, message: "Hello world", likesCount: 11 },
         { id: 4, message: "New post", likesCount: 11 }
       ],
-      newPostText: 'it-kamasutra'
+      newPostText: ''
     },
     dialogsPage: {
       dialogs: [
